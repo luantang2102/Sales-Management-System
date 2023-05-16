@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Sales Management System:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Sales_Management_System_jar</output-path>
+    <root id="archive" name="Sales.jar">
+      <element id="module-output" name="Sales" />
+      <element id="extracted-dir" path="D:/Downloads/mysql-connector-j-8.0.32.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
