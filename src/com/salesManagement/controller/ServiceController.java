@@ -284,35 +284,37 @@ public class ServiceController extends WindowAdapter implements ActionListener, 
             if(view.boxTables.getSelectedItem().equals("Customers")) {
                 if(view.selectedIds.isEmpty()) {
                     view.createDialog("Please choose a customer!");
-                    view.setEnabled(true);
                 }
                 else {
                     for (char[] customerId : view.selectedIds) {
                         view.customerUpdateFrame(customerService.getByCustomerId(customerId));
                     }
                 }
+                view.setEnabled(true);
             }
             if(view.boxTables.getSelectedItem().equals("Products")) {
                 if(view.selectedIds.isEmpty()) {
                     view.createDialog("Please choose a product!");
-                    view.setEnabled(true);
+
                 }
                 else {
                     for (char[] productId : view.selectedIds) {
                         view.productUpdateFrame(productService.getByProductId(productId));
                     }
                 }
+                view.setEnabled(true);
             }
             if(view.boxTables.getSelectedItem().equals("Orders")) {
                 if(view.selectedIds.isEmpty()) {
                     view.createDialog("Please choose an order!");
-                    view.setEnabled(true);
+
                 }
                 else {
                     for (char[] orderId : view.selectedIds) {
                         view.orderUpdateFrame(orderService.getByOrderId(orderId), customerService.getAll(), productService.getAll());
                     }
                 }
+                view.setEnabled(true);
             }
         }
         if(actionCommand.equals("Save")) {
